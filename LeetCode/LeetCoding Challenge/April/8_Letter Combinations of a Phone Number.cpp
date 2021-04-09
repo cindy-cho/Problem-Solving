@@ -46,12 +46,13 @@ public:
             makeCombinations(digit+1,tmp+dic[current][i]);
         }
     }
+    
 
     vector<string> letterCombinations(string digits) {
         target = digits.length();
         given = digits;
         makeCombinations(0,"");
-
+        
         return ans;
     }
 };
@@ -59,7 +60,7 @@ public:
 int main(void){
     Solution S;
     vector <string> ans;
-    ans = S.letterCombinations("2");
+    ans = S.letterCombinations("32");
     for(auto a : ans) cout << a << ",";
     cout << endl;
     
