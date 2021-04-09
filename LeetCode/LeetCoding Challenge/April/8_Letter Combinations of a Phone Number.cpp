@@ -12,9 +12,6 @@
 
 // Input: digits = "2"
 // Output: ["a","b","c"]
- 
-
-// Constraints:
 
 // 0 <= digits.length <= 4
 // digits[i] is a digit in the range ['2', '9'].
@@ -31,7 +28,7 @@ private:
     string given;
     vector <string> ans;
     int target;
- 
+
 public:
     void makeCombinations(int digit,string tmp){
         if(digit==-1) return;
@@ -46,7 +43,6 @@ public:
             makeCombinations(digit+1,tmp+dic[current][i]);
         }
     }
-    
 
     vector<string> letterCombinations(string digits) {
         target = digits.length();
@@ -64,6 +60,5 @@ int main(void){
     for(auto a : ans) cout << a << ",";
     cout << endl;
     
-
     return 0;
 }
