@@ -5,7 +5,11 @@ using namespace std;
 int main(void){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    cout << "154\n";
-    cout << "ryuflower\n";
+    int n,k,ANS=0;
+    cin >> n >> k;
+    ANS = n*k;
+    cin >> n >> k;
+    ANS += n*k;
+    cout << ANS << "\n";
     return 0;
 }
