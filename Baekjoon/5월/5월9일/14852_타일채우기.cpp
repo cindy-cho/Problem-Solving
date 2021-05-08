@@ -18,7 +18,7 @@ int main(void){
     }
     sum = prev2+prev;
     for(int i=3;i<=N;i++){
-        now = (sum*2+prev2)%1000000007;
+        now = (sum*2+prev2+2)%1000000007;
         sum += now;
         sum %= 1000000007;
         prev2=prev%1000000007;
