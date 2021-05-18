@@ -7,7 +7,7 @@ int main(void){
     int N,value,i,ansIdx=0,flag=1;
     vector <int> ans,oper;
     stack <int> holder;
-\
+
 
     scanf("%d",&N);
     

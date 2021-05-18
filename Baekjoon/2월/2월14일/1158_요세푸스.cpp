@@ -12,7 +12,7 @@ int main(void){
     vector <int> candidates;
 
     int i,pos=K-1;
-             
+
     for(i=1;i<=N;i++) candidates.push_back(i);
     printf("<");
     for(i=1;i<N;i++){
