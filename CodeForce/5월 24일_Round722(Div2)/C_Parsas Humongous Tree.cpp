@@ -14,8 +14,8 @@ int main(void){
     double value[100001][2];
     list<int> edge[100001];
     list<int> :: iterator it;
-    priority_queue <pair<int,int>> q;
-    pair<int,int> cur;
+    queue <int> q;
+    int cur;
     cin >> t;
     for(int i=0;i<t;i++){
         cin >> n;
@@ -32,6 +32,11 @@ int main(void){
             cin >> u >> v;
             edge[u].push_back(v);
             edge[v].push_back(u);
+        }
+        q.push(idx);
+        while(!q.empty()){
+            cur=q.front();
+            q.pop();
         }
     }
     return 0;
