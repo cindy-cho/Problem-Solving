@@ -16,7 +16,7 @@ int main(void){
     ll X,hairTmp;
     cin  >> N >> X;
     for(int i=0;i<N;i++){
-        cin >> hairTmp;
+        cin >> hairTmp; 
         if(hairTmp==X) full++;
         else if(hairTmp*2 >=X) bigger++;
         else smaller++;
